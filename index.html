@@ -2,38 +2,298 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Animated Login Form</title>
-    <script src="https://kit.fontawesome.com/6adc67ffbe.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <title>Responsive Website</title>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-       
-      <section>
-        <div class="login-box">
-            <form action="" class="action">
-            <h2>Login</h2>
-            <div class="input-box">
-            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-            <input type="email" required>
-            <label>Email</label>
-        
-        </div>
-        <div class="input-box">
-          <span class="icon"><i class="fa-solid fa-lock"></i></span>
-             <input type="password" required> 
-             <label>Password</label>  
-        </div> 
-        <div class="remember-forget">
-             <label><input type="checkbox"> Remember Me</label>
-             <a href="#"> Forget Password?</a>
-        </div>
-        <button type="submit">Login</button>
-        <div class="register-link">
-            <p>Don't have an account?<a href="#">Register</a></p>
-        </div>
-    </form>  
-</div> 
+    
+<header>
+
+     <div id="menu-bar" class="fas fa-bars"></div>   
+
+     <a href="#" class="logo"><span>T</span>ravel</a>
+     <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#project">project</a>
+        <a href="#contact">contact</a>
+        <a href="#gallery">gallery</a>
+        <a href="#about">about</a>
+     </nav>   
+     
+     <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+     </div>
+
+     <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+     </form>
+
+</header>
+
+
+<div class="login-form-container">
+     
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="">
+        <h3>Login</h3>
+     v   <input type="email" class="box" placeholder="enter your email">
+        <input type="password" class="box" placeholder="enter your password">
+        <input type="submit" value="login-now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have and account? <a href="#">register now</a></p>
+    </form>
+
+</div>
+
+<section class="home" id="home">
+    
+  <div class="content">
+   <h3>adventure is worthwhile</h3>
+   <p>discover new place with us, adventure awaits</p>
+   <a href="#" class="btn">discover more</a>
+  </div>
+
+      <div class="controls">
+         <span class="vid-btn active" data-src="/Videos/vid-1.mp4"></span>
+         <span class="vid-btn" data-src="/Videos/vid-2.mp4"></span>
+         <span class="vid-btn" data-src="/Videos/vid-3.mp4"></span>
+         <span class="vid-btn" data-src="/Videos/vid-4.mp4"></span>
+         <span class="vid-btn" data-src="/Videos/vid-5.mp4"></span>
+      </div>
+      
+      <div class="video-container">
+         <video src="/pictures/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+      </div>
+
 </section>
+
+      <section class="project" id="project">
+         <h1 class="heading">
+            <span>p</span>
+            <span>r</span>
+            <span>o</span>
+            <span>j</span>
+            <span>e</span>
+            <span>c</span>
+            <span>t</span>
+         </h1>
+
+           <div class="heading">
+            <h1>Zipline</h1>
+            <p>a long thick wire attached between two points, one higher than the other, 
+               that you can move along quickly while hanging from a small wheel, as entertainment 
+               or as a way of travelling above and across something: The elevated zip line will take guests on a 50-mph ride across the forest canopy.</p>
+      </div>
+     <div class="container">
+     <section class="about">
+     <div class="about-image">
+     <img src="/pictures/zipline.jpg" alt="">   
+      </div>
+      <div class="about-content">
+         <h2>Cost of zipline</h2>
+         <p>Most basic zip lines are about 60-150 feet long and have weight ratings up to 250 pounds. These zipline rides typically cost $2,000 
+            to $8,000 once you add a launch platform, but can be higher if we have significant travel to your location.</p>  
+      </div>
+     </section>
+     </div>
+       
+   </section>
+
+   <section class="contact" id="contact">
+
+      <h1 class="heading">
+         <span>c</span>
+         <span>o</span>
+         <span>n</span>
+         <span>t</span>
+         <span>a</span>
+         <span>c</span>
+         <span>t</span>
+      </h1>
+      
+      <section class="contact">
+         <div class="continer">
+            <h2>Contact Us</h2>
+            <div class="contact-wrapper">
+               <div class="contact-form">
+                  <h3>Send us a message</h3>
+                  <form>
+                     <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name">
+                     </div>
+                     <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email">
+                     </div>
+                     <div class="form-group">
+                       <textarea name="message" placeholder="Your Message"></textarea>
+                     </div>
+                     <button type="submit">Send Message</button> 
+                  </form>
+               </div>
+               <div class="contact-info">
+                  <h3>Contact Information</h3>
+                  <p><i class="fas fa-phone"></i>+9 876 543 210</p>
+                  <p><i class="fas fa-envelope"></i>Dargunopangit@gmail.com</p>
+                  <p><i class="fas fa-map-marked-alt"></i>Area Dargunov No.69 Street, Bermuda , Triangle </p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+   </section>
+
+
+   <section class="gallery" id="gallery">
+
+      <h1 class="heading">
+         <span>g</span>
+         <span>a</span>
+         <span>l</span>
+         <span>l</span>
+         <span>e</span>
+         <span>r</span>
+         <span>y</span>
+      </h1>
+
+    <div class="box-container">
+      
+      <div class="box">
+      <img src="/pictures/g-1.jpg" alt="">
+      <div class="content">
+         <h3>Picture 1</h3>
+         <p>Example of 10 pictures.</p>         
+      </div>
+    </div>
+    <div class="box">
+      <img src="/pictures/g-2.jpg" alt="">
+      <div class="content">
+         <h3>Pictur 2</h3>
+         <p>Example of 10 pictures.</p>         
+      </div>
+    </div>
+    <div class="box">
+      <img src="/pictures/g-3.jpg" alt="">
+      <div class="content">
+         <h3>Picture 3</h3>
+         <p>Example of 10 pictures.</p>
+      </div>
+    </div>
+    <div class="box">
+      <img src="/pictures/g-4.jpg" alt="">
+      <div class="content">
+         <h3>picture 4</h3>
+         <p>Example of 10 pictures.</p>        
+      </div>
+    </div>
+    <div class="box">
+      <img src="/pictures/g-5.jpg" alt="">
+      <div class="content">
+         <h3>picture 5</h3>
+         <p>Example of 10 pictures.</p>         
+      </div>
+    </div>
+    <div class="box">
+      <img src="/pictures/f-7.jpg" alt="">
+      <div class="content">
+         <h3>Tpicture 6</h3>
+         <p>Example of 10 pictures.</p>        
+      </div>
+    </div>
+    <div class="box">
+      <img src="/pictures/suprayot.jpg" alt="">
+      <div class="content">
+         <h3>picture 7</h3>
+         <p>Example of 10 pictures.</p>         
+      </div>
+    </div>
+    <div class="box">
+      <img src="/pictures/f-3.jpg" alt="">
+      <div class="content">
+         <h3>picture 8</h3>
+         <p>Example of 10 pictures.</p>
+         <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <div class="box">
+      <img src="/pictures/f-2.jpg" alt="">
+      <div class="content">
+         <h3>picture 9</h3>
+         <p>Example of 10 pictures.</p>
+      </div>
+    </div>
+    <div class="box">
+      <img src="/pictures/f-6.jpg" alt="">
+      <div class="content">
+         <h3>picture 10</h3>
+         <p>Example of 10 pictures.</p>   
+      </div>
+    </div>
+ </div>
+
+</section>
+
+ <section class="about" id="about">
+
+   <h1 class="heading">
+      <span>a</span>
+      <span>b</span>
+      <span>o</span>
+      <span>u</span>
+      <span>t</span>
+   </h1>
+
+   <section class="footer">
+      
+      <div class="box-container">
+
+         <div class="box">
+            <h3>about</h3>
+            <p> The Web Designer,He is 5'6 and he studied at
+                ISPSC candon and his course is INFORMATION TECHNOLOGY and lastly
+               Apaka pogi ko talaga</p>
+         </div>
+         <div class="box">
+            <h3>5 Love language</h3>
+            <a href="#">Physical touch</a> 
+            <a href="#">Quality time</a> 
+            <a href="#">Words of affirmation</a> 
+            <a href="#">Gifts</a> 
+            <a href="#">Act of service</a> 
+         </div>
+         <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a> 
+            <a href="#">project</a> 
+            <a href="#">contact</a> 
+            <a href="#">gallery</a>
+            <a href="#">about me</a> 
+         </div>
+         <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a> 
+            <a href="#">instagram</a> 
+            <a href="#">twitter</a> 
+            <a href="#">telegram</a> 
+            <a href="#">Linked In</a> 
+         </div>
+      </div>
+
+      <h1 class="credit"> created by <span> Mr. HALIMAW MAGSELOS</span> || all rights reserved!</h1>
+
+   </section>
+
+
+
+<script src="script.js"></script>
+
 </body>
+</html>
